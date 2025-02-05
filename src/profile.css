@@ -1,0 +1,331 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background: #f2f2f2;
+  min-height: 100%; 
+  font-family: Arial, sans-serif;
+  color: black;
+  display: flex; 
+  flex-direction: column; 
+}
+
+.Profile {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  background: #f2f2f2;
+  color: black;
+}
+
+.content-wrapper {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 0;
+  max-width: 1400px;
+  margin: 0 auto;
+  align-items: flex-start;
+  flex: 1; 
+}
+
+.profile-card {
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #D3D3D3;
+  padding: 2rem;
+  color: black;
+  position: relative;
+}
+
+.profile-header {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+
+.profile-details h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.title,
+.company,
+.location {
+  margin: 0.25rem 0;
+  color: black;
+}
+
+.profile-bio-actions {
+  margin-top: 1.5rem;
+}
+
+.bio {
+  margin: 1rem 0;
+  color: black;
+  line-height: 1.5;
+}
+
+.action-buttons {
+  display: flex;
+  align-items: centefr;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.follow-button {
+  background: #1a73e8;
+  font-family: "Roboto";
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.message-button {
+  background: white;
+  border: 1px solid #1a73e8;
+  color: #1a73e8;
+  padding: 0.5rem 1rem;
+  font-family: "Roboto";
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.edit-button {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+}
+
+.stats {
+  color: black;
+}
+
+.sidebar {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  flex-basis: 25%;
+  color: black;
+  border: 1px solid #D3D3D3;
+}
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.connections {
+  margin-top: 1rem;
+  color: black;
+}
+
+.connection-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.connection-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.connection-item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.connection-info {
+  flex: 1;
+  color: black;
+}
+
+.connection-info p {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.connection-info p:first-child {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.connection-info .title {
+  font-size: 14px;
+}
+
+.follow-button-small {
+  margin-top: 10px;
+  padding: 0.25rem 0.75rem;
+  background: white;
+  border: 1px solid #1a73e8;
+  color: #1a73e8;
+  border-radius: 4px;
+  font-family: "Roboto";
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.organization-card {
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #D3D3D3;
+  padding: 2rem;
+  height: fit-content;
+  flex: 1;
+  color: black;
+}
+
+.organization-card h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.organization-entry {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+}
+
+.organization-entry h4 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.date-added {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.org-bio {
+  font-size: 1rem;
+  color: black;
+}
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.organization-card {
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #D3D3D3;
+  padding: 2rem;
+  color: black;
+}
+
+.organizations {
+  margin-top: 1rem;
+  color: black;
+}
+
+.organization-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.organization-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.organization-item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.organization-info {
+  flex: 1;
+  color: black;
+}
+
+.organization-info p {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.organization-info p:first-child {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.organization-info .title {
+  font-size: 14px;
+}
+
+.contact-card {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #D3D3D3;
+}
+
+.contact-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column; 
+  font-size: 1em;
+}
+.contact-item strong {
+  font-weight: 600;
+  margin-bottom: 3px; 
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-item p {
+  margin: 0;
+  padding-left: 33px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons span {
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #000;
+}
+
