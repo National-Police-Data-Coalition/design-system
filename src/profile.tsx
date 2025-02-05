@@ -1,5 +1,5 @@
 import "./profile.css";
-import ProfilePicture from "./assets/ProfilePictureMaker (1).png";
+import ProfilePicture from "./assets/random_profile_picture.jpg";
 import { Link } from "react-router-dom";
 
 const Profile = () => {
