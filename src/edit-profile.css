@@ -1,16 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body, html {
-    display: flex; 
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .edit-profile {
-    width: 50%;
-    margin: 50px auto;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    font-family: Arial, sans-serif;
-  }
+  width: 50%;
+  margin: 50px auto;
+  background-color: white;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  flex: 1;
+}
+
   
   /* Profile Header */
   .profile-header {
@@ -73,9 +93,23 @@ body, html {
     border: 1px solid #ddd;
     border-radius: 6px;
     font-size: 14px;
-    color: #333;
+    color: black; /* Text color */
+    background-color: white; /* Background color */
   }
   
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  }
+
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: #999;
+  }
+
   .form-group textarea {
     resize: none;
     height: 100px;
@@ -94,5 +128,25 @@ body, html {
   
   .save-btn:hover {
     background-color: #218838;
+  }
+  
+  .back-btn {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    color: black;
+    font-size: 16px;
+    width: fit-content;
+    margin-bottom: 20px;
+  }
+
+  .back-btn:hover {
+    color: #333;
+  }
+  
+  .back-btn span {
+    font-size: 20px;
   }
   
