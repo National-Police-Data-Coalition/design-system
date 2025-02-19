@@ -1,3 +1,3 @@
-import TextInput from "./text-input/TextInput";
+import TextInput from "./TextInput/TextInput";
 
 export { TextInput };
