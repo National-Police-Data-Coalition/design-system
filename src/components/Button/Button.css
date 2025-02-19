@@ -53,6 +53,7 @@ button.link {
   color: var(--primary-main);
   background-color: transparent;
   text-decoration: underline;
+  text-transform: none;
 }
 
 button:disabled {
