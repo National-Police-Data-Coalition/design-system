@@ -1,35 +1,45 @@
-import npdcLogo from "./assets/npdc.png";
-import { TextInput } from "./components";
+
+import { Button, TextInput } from "./components";
 import "./App.css";
+import "./variables.css";
 
 function App() {
   return (
     <>
-      <header>
-        <div className="logoText">
-          <div>
-            <a href="https://www.nationalpolicedata.org" target="_blank">
-              <img src={npdcLogo} className="logo" alt="Vite logo" />
-            </a>
-          </div>
-          <div>
-            <h1>National Police Data Index</h1>
-            <h2>Design System</h2>
-          </div>
-        </div>
-        <div className="card">
-          <a href="https://npdindex.readme.io/reference/getting-started-with-your-api">
-            <button>Learn More</button>
-          </a>
-        </div>
-      </header>
-      <section className="componentLibrary">
-        <h3>Text Input</h3>
-        <TextInput label="Input label" />
+      <h3>Text Input</h3>
+      <TextInput label="Input label" />
 
-        <h3>Text Input &mdash; Full</h3>
-        <TextInput label="Input label" isFull={true} />
-      </section>
+      <h3>Text Input &mdash; Full</h3>
+      <TextInput label="Input label" isFull={true} />
+
+      <h3>Button &mdash; Primary</h3>
+      <Button onClick={() => console.log("clicked")}>Test</Button>
+      <Button size="medium" onClick={() => console.log("clicked")}>
+        Test
+      </Button>
+      <Button size="small" onClick={() => console.log("clicked")}>
+        Test
+      </Button>
+
+      <h3>Button &mdash; Secondary</h3>
+      <Button variant="secondary" onClick={() => console.log("clicked")}>
+        Test
+      </Button>
+
+      <h3>Button &mdash; Disabled</h3>
+      <Button isDisabled={true} onClick={() => console.log("clicked")}>
+        Test
+      </Button>
+
+      <h3>Button &mdash; Link</h3>
+      <Button variant="link" onClick={() => console.log("clicked")}>
+        Test
+      </Button>
+
+      <h3>Button &mdash; Full</h3>
+      <Button isFull={true} onClick={() => console.log("clicked")}>
+        Test
+      </Button>
     </>
   );
 }
