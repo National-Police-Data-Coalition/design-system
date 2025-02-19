@@ -57,4 +57,11 @@ button.link {
 button:disabled {
   background-color: var(--disabled-background);
   color: grey;
+  box-shadow: none;
+}
+
+button:disabled:hover {
+  background-color: var(--disabled-background) !important;
+  color: grey;
+  box-shadow: none;
 }
