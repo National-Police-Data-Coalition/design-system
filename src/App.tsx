@@ -1,5 +1,5 @@
 import npdcLogo from "./assets/npdc.png";
-import { TextInput } from "./component-library";
+import { TextInput } from "./components";
 import "./App.css";
 
 function App() {
