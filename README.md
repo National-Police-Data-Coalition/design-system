@@ -22,3 +22,11 @@ npm install
 ```bash
 npm run dev
 ```
+
+## Storybook
+
+To see the storybook components run:
+
+```bash
+npm run storybook
+```
