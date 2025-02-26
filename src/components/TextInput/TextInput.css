@@ -4,6 +4,10 @@ input {
   padding: 1rem 0.6rem;
 }
 
+input[aria-invalid="true"] {
+  border: 2px solid #d32f2f;
+}
+
 .full {
   width: 100%;
 }
@@ -30,8 +34,18 @@ input:not(:placeholder-shown) + label {
   font-size: 0.75rem;
 }
 
-.help {
+.help,
+.error {
   margin-left: 0.3rem;
   font-size: 0.75rem;
+}
+
+.help {
   color: #6f6f6f;
+}
+
+.error {
+  color: #d32f2f;
+  display: flex;
+  align-items: center;
 }

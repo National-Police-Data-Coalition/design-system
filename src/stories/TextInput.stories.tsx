@@ -23,6 +23,7 @@ type Story = StoryObj<StoryProps>;
 export const Text: Story = {
   args: {
     label: "Name",
+    errorText: undefined,
     helpText: undefined,
     type: "text",
     isFull: false,
