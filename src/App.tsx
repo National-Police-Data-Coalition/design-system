@@ -1,4 +1,3 @@
-
 import { Button, TextInput } from "./components";
 import "./App.css";
 import "./variables.css";
@@ -9,14 +8,19 @@ function App() {
       <h3>Text Input</h3>
       <TextInput label="Input label" />
 
+      <h3>Text Input &mdash; Password</h3>
+      <TextInput label="Input label" type="password" />
+
       <h3>Text Input &mdash; Full</h3>
       <TextInput label="Input label" isFull={true} />
 
       <h3>Button &mdash; Primary</h3>
       <Button onClick={() => console.log("clicked")}>Test</Button>
+      &nbsp;
       <Button size="medium" onClick={() => console.log("clicked")}>
         Test
       </Button>
+      &nbsp;
       <Button size="small" onClick={() => console.log("clicked")}>
         Test
       </Button>

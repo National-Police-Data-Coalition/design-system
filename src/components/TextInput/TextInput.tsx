@@ -1,13 +1,15 @@
-import { useId } from 'react';
+import { useId } from "react";
 import "./TextInput.css";
 
 interface PrimaryInputProps {
   label: string;
+  type?: "text" | "password";
   isFull?: boolean;
 }
 
 function TextInput({
   label,
+  type = "text",
   isFull = false,
 }: PrimaryInputProps) {
   const inputId = useId();
@@ -18,7 +20,7 @@ function TextInput({
         id={inputId}
         className={isFull ? "full" : ""}
         placeholder=" "
-        type="text"
+        type={type}
       />
       <label htmlFor={inputId}>{label}</label>
     </div>
