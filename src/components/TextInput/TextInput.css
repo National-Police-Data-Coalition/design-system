@@ -29,3 +29,9 @@ input:not(:placeholder-shown) + label {
   padding: 0 0.25rem;
   font-size: 0.75rem;
 }
+
+.help {
+  margin-left: 0.3rem;
+  font-size: 0.75rem;
+  color: #6f6f6f;
+}

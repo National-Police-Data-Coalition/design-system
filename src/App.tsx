@@ -11,6 +11,9 @@ function App() {
       <h3>Text Input &mdash; Password</h3>
       <TextInput label="Input label" type="password" />
 
+      <h3>Text Input</h3>
+      <TextInput label="Input label" helpText="help text here" />
+
       <h3>Text Input &mdash; Full</h3>
       <TextInput label="Input label" isFull={true} />
 
